@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kruvzur | Login page</title>
+    <style>
+*{
+    font-family: 'Roboto', sans-serif;
+}
+.panel{
+    display: flex;
+    justify-content: center;
+}
+.input{
+    border: 2px solid black;
+    border-radius: 6px;
+    text-align: center;
+    padding: 5px;
+    margin-top: 15px;
+    height: 25px;
+    width: 270px;
+}
+.btnLog{
+    width: 50px;
+    height: 25px;
+    border: 2px solid black;
+    border-radius: 6px;
+    padding: 5px;
+    margin-top: 15px;
+    margin-left: 5px;
+    transition-duration: 0.4s;
+    cursor: pointer;
+    font-size: 15px;
+    text-align: center;
+}
+.btnLog:hover{
+    color: white;
+    background-color: black;
+}
+.footer{
+    display: flex;
+    justify-content: center;
+    margin-top: 5px;
+    font-size: 12px;
+}
+.footer a{
+    padding-inline: 5px;
+    color: gray;
+}
+    </style>
+</head>
+<body>
+<script>
+    function myFunction(){
+        var pasw = document.getElementById("passwordInput").value;
+        sessionStorage.setItem(111,pasw); 
+        window.location.replace("/Kruvzur/Auth/AUTHSERVER.html");
+    }
+   
+</script>
+
+
+
+    <div class="panel">
+    <h1>Login to SERVERNAME</h1>
+</div>
+<div class="panel">
+    <input placeholder="Password" class="input" id="passwordInput" type="password" required>
+    <a class="btnLog" target="_blank" onclick="myFunction()">Login</a>
+</div>
+<footer class="footer">
+    <a href="/Kruvzur/register.html">Register new account</a>
+    <a href="/Kruvzur/index.html">Custom footer link 1</a>
+    <a href="/Kruvzur/index.html">Custom footer link 2</a>
+</footer>
+    
+
+
+</body>
+</html>

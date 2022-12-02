@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        *{
+            font-family: 'Roboto', sans-serif;
+            padding: 0;
+            margin: 0;
+            text-decoration: none;
+        }
+        nav{
+            font-size: 18px;
+            background-color: rgb(219, 219, 219);
+            padding: 10px;
+            display: flex;
+            align-items: center;
+            justify-content: right;
+        }
+        nav a{
+            padding: 15px;
+            border-radius: 10px;
+            transition-duration: 0.2s;
+            cursor: pointer;
+        }
+        nav a:hover{
+            background-color: black;
+            color: rgb(219, 219, 219);
+        }
+        .highLight{
+            background-color: black;
+            color: rgb(219, 219, 219);
+        }
+        .highLight:hover{
+            background-color: rgb(26, 255, 0);
+            color: black;
+        }
+        header{
+            border-bottom: 5px solid rgb(26, 255, 0);
+        }
+    </style>
+</head>
+<body>
+    <script>
+        var docTitle = "Premium | " + sessionStorage.getItem(801);
+        document.title = docTitle;
+        </script>
+    <header>
+        <nav>
+            <h1 style="margin-right:48%;">Kruvzur Inner Page - Premium panel</h1>
+            <a>Link 1</a>
+            <a>Link 2</a>
+            <a>Link 3</a>
+            <a href="/Kruvzur/index.html" class="highLight">Logout</a>
+        </nav>
+    </header>
+
+</body>
+</html>

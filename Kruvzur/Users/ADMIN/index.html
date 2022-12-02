@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        *{
+            font-family: 'Roboto', sans-serif;
+            padding: 0;
+            margin: 0;
+            text-decoration: none;
+        }
+        nav{
+            font-size: 18px;
+            background-color: rgb(219, 219, 219);
+            padding: 10px;
+            display: flex;
+            align-items: center;
+            justify-content: right;
+        }
+        nav a{
+            padding: 15px;
+            border-radius: 10px;
+            transition-duration: 0.2s;
+            cursor: pointer;
+        }
+        nav a:hover{
+            background-color: black;
+            color: rgb(219, 219, 219);
+        }
+        .highLight{
+            background-color: black;
+            color: rgb(219, 219, 219);
+        }
+        .highLight:hover{
+            background-color: rgb(70, 70, 70);
+            color: rgb(219, 219, 219);
+        }
+        header{
+            border-bottom: 5px solid black;
+        }
+    </style>
+</head>
+<body>
+    <script>
+        var docTitle = "Kruvzur | " + sessionStorage.getItem(801);
+        document.title = docTitle;
+        </script>
+    <header>
+        <nav>
+            <h1 style="margin-right:48%;">Kruvzur Inner Page - Administration</h1>
+            <a>Link 1</a>
+            <a>Link 2</a>
+            <a>Link 3</a>
+            <a href="/Kruvzur/index.html" class="highLight">Logout</a>
+        </nav>
+    </header>
+    <div>
+        <div class="progress">
+            <progress min="0" value="20" max="100" style="width: 90%;margin-left: 5%;height: 50px;"></progress>
+            <p style="padding-left: 38%;">20% of total is completed - Set up your site with Kruvzur!</p>
+            
+          </div>
+    </div>
+
+    <table>
+        <th>User</th>
+        <th>Password</th>
+        <tr>
+            <td>admin</td>
+            <td>admin</td>
+        </tr>
+        <tr>
+            <td>User 1</td>
+            <td>newUserPassword1</td>
+        </tr>
+        <tr>
+            <td>User 2</td>
+            <td>newUserPassword2</td>
+        </tr>
+        <tr>
+            <td>User 3</td>
+            <td>newUserPassword3</td>
+        </tr>
+        <tr>
+            <td>----------------------------</td>
+            <td>----------------------------</td>
+        </tr>
+    </table>
+
+</body>
+</html>

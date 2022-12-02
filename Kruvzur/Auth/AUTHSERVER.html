@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kruvzur | AUTHSERVER</title>
+</head>
+<body onload="myFunction()">
+    <script>
+        function myFunction(){
+            var pasw = sessionStorage.getItem(111);
+            //Password testing ↓
+            if(pasw == "admin"){
+                sessionStorage.setItem(800,"ADMIN");
+                sessionStorage.setItem(801,"Admin");
+            }else if(pasw == "newUserPassword1"){
+                sessionStorage.setItem(800,"PREMIUM");
+                sessionStorage.setItem(801,"User 1");
+            }else if(pasw == "newUserPassword2"){
+                sessionStorage.setItem(800,"USER");
+                sessionStorage.setItem(801,"User 2");
+            }else if(pasw == "newUserPassword3"){
+                sessionStorage.setItem(800,"USER");
+                sessionStorage.setItem(801,"User 3");
+
+            }
+
+            //Here it ends ↑
+            var role = sessionStorage.getItem(800);
+            if(role == "ADMIN"){
+                window.location.replace("/Kruvzur/Users/ADMIN/index.html");
+            }else if(role == "USER"){
+                window.location.replace("/Kruvzur/Users/USER/index.html");
+            }else if(role == "PREMIUM"){
+                window.location.replace("/Kruvzur/Users/PREMIUM/index.html");
+            }else{
+                window.location.replace("/Kruvzur/index.html");
+            }
+        }
+    </script>
+    <p>Authentication, please wait...</p>
+</body>
+</html>
